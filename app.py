@@ -7,8 +7,7 @@ PORT = 8080
 class Greeter(BaseHTTPRequestHandler):
     def do_GET(self):
         html = (
-            f"<h1>HI!, {NAME}!</h1>"
-            "<p>Quote of the day: Ship it, then polish it.</p>"
+            f"<h1>Hey there, {NAME}!</h1>"            "<p>Quote of the day: Ship it, then polish it.</p>"
         )
         self.send_response(200)
         self.send_header("Content-Type", "text/html")
